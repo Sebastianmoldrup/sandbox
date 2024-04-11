@@ -22,16 +22,6 @@ const sneakers =  [
 export default function Redux({ product }: { product: any }) {
     const dispatch = useDispatch();
 
-    // // Add to cart
-    // const handleAddToCart = (product: any) => {
-    //     dispatch(addProduct(product));
-    // };
-
-    // // Remove from cart
-    // const handleRemoveFromCart = (product: any) => {
-    //     dispatch(removeProduct(product));
-    // };
-
     // log state
     const cart = useSelector((state: any) => state.cart.products);
     console.log(cart);
